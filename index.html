@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Wojtek counter</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Actually counter</h1>
+    <div id="counters">
+      <counter name="Wojtek +1"></counter>
+    </div>
+  </div>
+  <script type="text/x-template" id="counter">
+      <div class="counter">
+        <div class="counterHeader">{{ name }}</div>
+        <div class="counterBody">
+          <a class="counterDecrement" v-bind:disabled="counter <= 0" v-on:click="decrement">-</a>
+          <div class="counterState">{{ counter }}</div>
+          <a class="counterIncrement" v-on:click="increment">+</a>
+        </div>
+      </div>
+    </script>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

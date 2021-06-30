@@ -1,0 +1,62 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+#app {
+  text-align: center;
+}
+#app h1 {
+  font-size: 300%;
+}
+#app .counter .counterHeader {
+  font-size: 150%;
+  font-style: italic;
+}
+#app .counter .counterBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 3em;
+}
+#app .counter .counterBody a {
+  display: block;
+  background: #efefef;
+  width: 1.5em;
+  height: 1.5em;
+  font-weight: 700;
+  border: none;
+  margin: 0;
+  box-shadow: 2px 2px 0 0 #333;
+  font-size: 200%;
+  user-select: none;
+}
+#app .counter .counterBody a:active {
+  position: relative;
+  left: 1px;
+  top: 1px;
+  box-shadow: 1px 1px 0 0 #333;
+}
+#app .counter .counterBody a.counterIncrement {
+  color: green;
+  background-color: #d2e2d2;
+}
+#app .counter .counterBody a.counterDecrement {
+  color: red;
+  background-color: #ffe9e9;
+}
+#app .counter .counterBody a.counterDecrement[disabled] {
+  opacity: 0;
+}
+#app .counter .counterBody .counterState {
+  font-size: 300%;
+  padding: 0 0.5em;
+  width: 1.5em;
+}
+span.redacted {
+  color: #000;
+  background: #000;
+}
